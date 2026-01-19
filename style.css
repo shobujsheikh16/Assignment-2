@@ -375,3 +375,70 @@ body {
   align-items: center;
   gap: 10px;
 }
+
+/* Host Section*/
+
+.host-section {
+  background-color:rgba(26, 11, 46, 1);
+  padding: 100px 20px;
+  color: white;
+  text-align: center;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.section-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.host-card {
+  background-color: rgba(53, 17, 101, 0.4);
+  border-radius: 40px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  text-align: left;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.host-img-box img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 2px solid #2d243d;
+}
+.host-name {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+.host-p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.37);
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+.icon-circle {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  font-size: 14px;
+  border: 1px solid #443a5a;
+  transition: 0.1s;
+}
+.icon-circle:hover {
+  background: linear-gradient(to right, #fb923c49, #db277831, #9333ea);
+  border-color: transparent;
+  transform: translateY(-1px);
+}

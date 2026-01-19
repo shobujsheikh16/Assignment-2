@@ -259,8 +259,9 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.05);
   transition: 0.3s;
 }
-.feature-card:hover {
-  transform: translateY(-.5px);
+
+button:hover, .feature-card:hover {
+    transform: translateY(-1.5px);
 }
 .icon-img i {
   font-size: 30px;
@@ -484,4 +485,80 @@ body {
     font-size: 14px;
     color: rgba(250, 250, 250, 1);
     margin-top: 20px;
+}
+/* Animation mic-img  */
+
+@keyframes float {
+  50% { transform: translateY(-15px); }
+}
+/* --- Responsive Section --- */
+
+/* Medium Devices - 992px */
+
+@media screen and (max-width: 992px) {
+    .nav-links, .nav-btn {
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .navbar {
+        justify-content: space-between;
+        padding: 15px 5%;
+    }
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    .features-grid {
+        display: flex;
+        flex-direction: column;
+        grid-template-areas: none;
+        gap: 20px;
+    }
+    .host-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+        gap: 20px;
+    }
+    .host-img-box img {
+        width: 150px;
+        height: 150px;
+    }
+    .social-icons {
+        justify-content: center;
+    }
+    .episodes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small Devices - 576px */
+
+@media screen and (max-width: 576px) {
+    .banner-logo {
+        font-size: 32px;
+    }
+    .banner-p {
+        font-size: 15px;
+    }
+    .banner-btns {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+    .btn-spotify, .btn-subscribe {
+        width: 100%;
+        justify-content: center;
+    }
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    .episodes-grid {
+        grid-template-columns: 1fr;
+    }
+    .social-links {
+        gap: 15px;
+    }
 }

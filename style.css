@@ -1,0 +1,60 @@
+/* --- Global & Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter";
+}
+/* Navbar Section */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color:rgba(26, 11, 46, 1);
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin-left: 50px;
+    text-decoration: none;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #94a3b8bd;
+    font-size: 16px;
+     font-weight: 500;
+    transition: 0.3s;
+}
+.nav-links a:hover {
+  color: white;
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+.nav-btn {
+  background: linear-gradient(to right, #facc15, #ec4899, #9333ea);
+  border: none;
+  padding: 10px 25px;
+  border-radius: 50px;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.nav-bottom-line {
+  border-bottom: 1px solid #1a0b2e8a; 
+  width: 100%;
+}

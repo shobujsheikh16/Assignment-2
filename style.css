@@ -58,3 +58,105 @@ body {
   border-bottom: 1px solid #1a0b2e8a; 
   width: 100%;
 }
+
+/* Banner Section*/
+
+.banner {
+  background-image: url('B13-A02-TechWave/assets/hero-bg.png'); 
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.mic-wrapper {
+  position: relative;
+  width: 260px;
+  margin: 0 auto 40px;
+}
+.circle-image-bg {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle-img {
+  width: 100%;
+  height: 100%;
+}
+.mic-img {
+  position: absolute;
+  width: 120px;
+  z-index: 2;
+   animation: float 3s ease-in-out;
+}
+.new-badge {
+  position: absolute;
+  top: 15px;
+  right: 5px;
+  background-color: #00ff9d;
+  color: rgba(26, 11, 46, 1);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 800;
+}
+.banner-logo {
+  font-size: 54px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  font-style: Extra Bold;
+}
+.banner-p {
+  color: #94a3b8;
+  font-size: 18px;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.banner-btns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.btn-spotify {
+  background: linear-gradient(to right, #facc15, #ec4899, #9333ea);
+  border: none;
+  padding: 15px 30px;
+  border-radius: 50px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(170, 180, 125, 0.158);
+}
+.btn-spotify:hover {
+  transform: translateY(-2px);
+  background-position: right center;
+}
+.btn-subscribe {
+  background: transparent;
+  border: 1px solid #00ff9d;
+  padding: 15px 30px;
+  border-radius: 50px;
+  color: #00ff9d;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+.btn-subscribe:hover {
+  background-color: rgba(0, 255, 157, 0.062);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(170, 180, 125, 0.158);
+}

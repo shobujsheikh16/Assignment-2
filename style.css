@@ -558,6 +558,9 @@ button:hover, .feature-card:hover {
         grid-template-columns: 1fr;
     }
     .social-links {
-        gap: 15px;
+        display: grid;              
+        grid-template-columns: repeat(2, auto); 
+        gap: 20px 40px;             
     }
-}
+    }
+

@@ -560,7 +560,9 @@ button:hover, .feature-card:hover {
     .social-links {
         display: grid;              
         grid-template-columns: repeat(2, auto); 
-        gap: 20px 40px;             
+        gap: 20px 40px; 
+        justify-content: center;
+        align-items: center;          
     }
     }
 
